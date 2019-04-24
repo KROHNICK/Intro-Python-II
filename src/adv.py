@@ -25,6 +25,13 @@ chamber! Sadly, it has already been completely emptied by
 earlier adventurers. The only exit is to the south."""),
 }
 
+room["outside"].add_item(Lightsource("torch", "Should be enough to see..."))
+room["foyer"].add_item(Item("sword", "Not the sharpest..."), Treasure(
+    "spoon", "I think it's worth something.", 10, False))
+room["overlook"].add_item(Treasure("ruby", "Shines bright...", 20, False))
+room["treasure"].add_item(
+    Treasure("coin", "At least it's something.", 15, False))
+
 
 # Link rooms together
 
