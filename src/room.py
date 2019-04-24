@@ -10,7 +10,7 @@ class Room:
         self.items = []
 
     def __str__(self):
-        return f"{self.name}:\n{self.desc}:\n{self.items}."
+        print("{self.name}, {self.desc}, {self.items}")
 
     def add_item(self, *args):
         self.items.extend(args)
